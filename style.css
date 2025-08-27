@@ -1,0 +1,103 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fffaf3;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Cabeçalho com fundo em imagem */
+  .header {
+    background: url('imagens/fundo.jpg') center center/cover no-repeat;
+    height: 300px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+  }
+  
+  .header .overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px 40px;
+    border-radius: 10px;
+  }
+  
+  .header h1 {
+    font-size: 2.5rem;
+  }
+  
+  nav {
+    background-color: #a52a2a;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  nav a {
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    background-color: #7b1f1f;
+  }
+  
+  .container {
+    padding: 30px 20px;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  h2 {
+    color: #8b0000;
+    margin-bottom: 10px;
+  }
+  
+  .foto-local {
+    margin-top: 20px;
+  }
+  
+  .foto-local img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
+  }
+  
+  footer {
+    background-color: #8b0000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 600px) {
+    .header h1 {
+      font-size: 1.6rem;
+    }
+  
+    nav {
+      flex-direction: column;
+    }
+  
+    nav a {
+      padding: 10px;
+    }
+  
+    .header {
+      height: 250px;
+    }
+  }
+  
